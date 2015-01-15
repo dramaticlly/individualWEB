@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Test Fullpage - fullPage.js</title>
+	<meta name="author" content="Steve Zhang" />
+	<meta name="description" content="balabal." />
+	<meta name="keywords"  content="balabal" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    
+	<style>        
+h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+  }
+	.intro p{
+		color: #fff;
+    }
+    .section{
+		text-align:center;
+	}    
+    .logo{
+        
+    }
+    </style>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+    
+    
+    
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['AboutMe', 'Projects', 'Contacts'],
+				sectionsColor:['#47d147','#1bbc9b','#8FB98B', ],
+				slidesNavigation: true,
+			});
+		});
+	</script>
+</head>
+
+<body>
+<div id="fullpage">
+
+	<div class="section " id="section0">
+		<div class="intro">
+			<img src="imgs/1.png"  alt="1"/>
+			<h1>About Me</h1>
+			<p>Work, Study, Programming</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h1>More Projects</h1>
+				<p>
+					You can find summary of my in-school project and side-proejct here
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<h1>Self-balancing Lego Car</h1>
+            <p>#Assembly #DE2 #NIOS2 #ElectricalMotor #LightSensor</p>
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>Longest Common Substring</h1>
+            <p>#C++ #ContainerStructure #FileIO</p>
+            <p>#AlgorithmOptimization #DynamicProgramming</p>
+		</div>	
+        <div class="slide" id="slide4" data-anchor="slide4">
+			<h1>DE2 Typing Trainer</h1>
+            <p>#Verilog HDL #VGA #FiniteStateMachine</p>
+		</div>
+        <!--
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h1>Slide 5</h1>
+		</div>
+        -->
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Contact Me</h1>
+            <br />
+            
+        <div class="container">
+      
+          <div class="row" id="gmail" style="margin-bottom:10px">
+           <div class="col-md-6">
+             <div class="logo">
+             <a href="mailto:steveiszhy@gmail.com">
+             <img src="images/gmail2.png" alt="gmail logo" height=120px width=100px hspace=20px style="float:right">
+             </a>
+             </div> 
+            </div>
+           <div class="col-md-6" style="margin-top:32px" >
+            <a href="mailto:steveiszhy@gmail.com" class="btn btn-info btn-lg" style="float:left;">
+              <span class="glyphicon glyphicon-envelope"></span> Hire Me
+            </a>        
+           </div>  
+            </div>
+        
+            
+         <div class="row" id="linkedin" style="margin-bottom:20px">
+           <div class="col-md-6">
+            <div class="logo">
+             <img src="images/linkedin.png" alt="linkedin logo" height=100px width=100px hspace=20px style="float:right" onclick="window.open('https://www.linkedin.com/pub/hongyue-zhang/78/b73/3ab')">
+            </div>
+           </div>
+          <div class="col-md-6" style="margin-top:32px">
+            <a href="https://www.linkedin.com/pub/hongyue-zhang/78/b73/3ab" class="btn btn-info btn-lg" style="float:left;">LinkedIn
+             </a>
+            </div>
+           </div>
+            
+          <div class="row" id="github" style="margin-bottom:20px">  
+           <div class="col-md-6">  
+            <div class="logo">
+            <img src="images/github.png" alt="github logo" height=100px width=100px hspace=20px style="float:right"
+                 onclick="window.open('https://github.com/dramaticlly')">
+            </div>
+           </div>
+           <div class="col-md-6" style="margin-top:32px">   
+            <a href="https://github.com/dramaticlly" class="btn btn-info btn-lg" style="float:left;">Github
+            </a>    
+            </div>
+           </div>  
+        </div>
+            
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[         ]]]]]]]]]]]]]]]
+    [::::::::::::::         ::::::::::::::]
+    [::::::::::::::         ::::::::::::::]
+    [::::::[[[[[[[:         :]]]]]]]::::::]
+    [:::::[                         ]:::::]
+    [:::::[                         ]:::::]
+    [:::::[                         ]:::::]
+    [:::::[                         ]:::::]
+    [:::::[ CODE WEB with BRACKETS  ]:::::]
+    [:::::[  http://brackets.io     ]:::::]
+    [:::::[        Time Stamp       ]:::::]
+    [:::::[         20150113        ]:::::]
+    [:::::[                         ]:::::]
+    [:::::[                         ]:::::]
+    [::::::[[[[[[[:         :]]]]]]]::::::]
+    [::::::::::::::         ::::::::::::::]
+    [::::::::::::::         ::::::::::::::]
+    [[[[[[[[[[[[[[[         ]]]]]]]]]]]]]]]
+
+-->    
