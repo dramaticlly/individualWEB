@@ -52,6 +52,14 @@ h1{
 				anchors: ['AboutMe', 'Projects', 'Contacts'],
 				sectionsColor:['#47d147','#1bbc9b','#8FB98B', ],
 				slidesNavigation: true,
+                afterLoad: function(anchorLink,index){
+                   if(index == 1){
+                $("#downArrow").css("display","");}
+                   else if(index == 2){
+                $("#downArrow").css("display","");}               
+                   else if(index == 3){
+                $("#downArrow").css("display","none");}
+                }
 			});
 		});
 	</script>
@@ -64,11 +72,10 @@ h1{
 		<div class="intro">
 			<img src="imgs/1.png"  alt="1"/>
 			<h1 style="color:#d14747">About Me</h1>
-			<p style="color:#4753d1;font-size:200%">Work, Study, Programming</p>
+			<p style="color:#d147d1;font-size:200%">Work, Study, Programming</p>
             <br />
             <br />
-            <br />
-            <br />
+
             <div class="motto">
               <h1>Success is peace of mind which is a direct result of self-satisfaction in knowing you did your best to become the best you are capable of becoming.</h1>
               <p>--John Wooden</p>
@@ -159,7 +166,16 @@ h1{
 	</div>
 </div>
 
+   
+    <div class="navbar navbar-fixed-bottom" id="downArrow">
+        <div class="navbar-inner navbar-right" style="margin-right:3%">
+            <button onclick="$.fn.fullpage.moveSectionDown();" style="background-color: transparent; border:transparent; outline: none">
+                <img src="images/downarrow.png" alt="down" height="50px" width="50px">
+            </button>
+        </div>
+    </div>
 
+    
 </body>
 </html>
 <!--
