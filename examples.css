@@ -72,12 +72,21 @@ p{
 	font-size: 1.5em;
 }
 
+.intro h2{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+    color:#bff6ea!important;
+    font-weight: 500;
+    margin-top: 1%;
+}
+
 .motto h1{
     font-family:'Permanent Marker',cursive;
     font-weight:400!important;
     font-size:3em;
     text-align: left;
-    color:#d147d1!important;
+    color:#8c47d1!important;
     margin-left:10%;
     margin-right:10%;
     margin-bottom: 1%;
@@ -89,7 +98,7 @@ p{
     font-weight:700;
     font-size: 250%!important;
     float:right;
-    color:#8c47d1!important;
+    color:#4747d1!important;
 }
 
 .section{

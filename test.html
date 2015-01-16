@@ -87,21 +87,49 @@ h1{
 	    <div class="slide" id="slide1" data-anchor="slide1">
 			<div class="intro">
 				<h1>More Projects</h1>
-				<p>
+				<p style="color:#bff6ea">
 					You can find summary of my in-school project and side-proejct here
 				</p>
 			</div>
 		</div>
 
 	    <div class="slide" id="slide2" data-anchor="slide2">
+            <div class="projimg">
+              <img src="images/legocar.png" alt="legocar" height=300px width=auto/>
+            </div>
 			<h1>Self-balancing Lego Car</h1>
             <p>#Assembly #DE2 #NIOS2 #ElectricalMotor #LightSensor</p>
+            <br />
+             <div class="intro">
+                <h2><span style="color:#9ef1e0;font-size:200%">How it works</span>:
+                    <ul style="text-align:left;list-style-type:circle">
+                        <li>Assemble the axles, gears, plate together into see-saw car</li>
+                        <li>Connect motor and sensor port to lego controller, then link to GPIO of DE2 Board</li>
+                        <li>light sensor value indicate closeness to the ground </li>
+                        <li>If left side is closer to ground, set motor direction to forward and rise, vice versa</li>
+                        <li>Use Pulse Width Modulation to adjust motor speed</li>
+                    </ul>
+               </h2>
+             </div>
 		</div>
 
 		<div class="slide" id="slide3" data-anchor="slide3">
-			<h1>Longest Common Substring</h1>
+            <div class="projimg">
+              <img src="images/wiki.png" alt="wikipedia can be found here" height=250px width=auto onclick="window.open('https://en.wikipedia.org/wiki/Longest_common_substring_problem')"/>
+            </div>
+			<h1>Longest Common Substring</h1></a>
             <p>#C++ #ContainerStructure #FileIO</p>
             <p>#AlgorithmOptimization #DynamicProgramming</p>
+            <div class="intro">
+                <h2><span style="color:#9ef1e0;font-size:200%">Why need it</span>:
+                    <ul style="text-align:left;list-style-type:circle">
+                        <li>user-case scenario: extract longest popular word combination/phrases from logs</li>
+                        <li>traditional recursive algorithm would be inefficient to solve problem like this</li>
+                        <li>using dynamic programming instead would trade space with the execute time</li>
+                        <li>one of example input test-case have extreme condition with each line has 1M character, good algorithm can reduce execute time from 600s to 4s</li>
+                    </ul>
+               </h2>
+             </div>
 		</div>	
         <div class="slide" id="slide4" data-anchor="slide4">
 			<h1>DE2 Typing Trainer</h1>
@@ -143,7 +171,7 @@ h1{
             </div>
            </div>
           <div class="col-md-6" style="margin-top:32px">
-            <a href="https://www.linkedin.com/pub/hongyue-zhang/78/b73/3ab" class="btn btn-info btn-lg" style="float:left;">LinkedIn
+            <a href="https://www.linkedin.com/pub/hongyue-zhang/78/b73/3ab" target="_blank" class="btn btn-info btn-lg" style="float:left;">LinkedIn
              </a>
             </div>
            </div>
@@ -156,7 +184,7 @@ h1{
             </div>
            </div>
            <div class="col-md-6" style="margin-top:32px">   
-            <a href="https://github.com/dramaticlly" class="btn btn-info btn-lg" style="float:left;">Github
+            <a href="https://github.com/dramaticlly" target="_blank" class="btn btn-info btn-lg" style="float:left;">Github
             </a>    
             </div>
            </div>  
