@@ -81,24 +81,35 @@ p{
     margin-top: 1%;
 }
 
-.motto h1{
-    font-family:'Permanent Marker',cursive;
-    font-weight:400!important;
-    font-size:3em;
-    text-align: left;
-    color:#8c47d1!important;
+.motto{
+    background-color: #86e5c3;
+    display: inline-block;
     margin-left:10%;
     margin-right:10%;
-    margin-bottom: 1%;
     margin-top: 9%;
+    margin-bottom: 1%;
+    border-top: 2px solid #006a52;
+    border-bottom: 2px solid #006a52;
+}
+
+.motto h1{
+    font-family: 'Bree Serif', serif;
+    font-weight:400!important;
+    font-size:2em;
+    text-align: left;
+    color: black!important;
+    margin-left:3%;
+    margin-right:2%;
 }
 
 .motto p{
     font-family:'Satisfy',cursive;
-    font-weight:700;
-    font-size: 250%!important;
-    float:right;
-    color:#4747d1!important;
+    font-weight:600;
+    font-size: 200%!important;
+    //float:right;
+    text-align: right;
+    margin-right:1%;
+    color: black!important;
 }
 
 .section{
