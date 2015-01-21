@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     $("#edubtn")
     .on("click",function(){
-        $("#mottoh1").html("I am UofT ECE student, expected to graduate in 2017 Spring.");
+        $("#mottoh1").html("I am a UofT ECE student, expected to graduate in 2017 Spring. I am enthuastic about both hardware implementation and software development");
         $("#mottoimg").attr("src","images/ecelogo2.png");
         $("#mottop").css("display","none");
         console.log("education btn click");
@@ -20,7 +20,7 @@ $(document).ready(function(){
     
     $("#workbtn")
     .on("click",function(){
-        $("#mottoh1").html("I am currently working as a QA developer in IBM Canada Ltd for 16-month internship");
+        $("#mottoh1").html("I am currently working as a QA developer in IBM Canada Ltd for 16-month internship. I am responsible for functional verification of enterprise database software --DB2");
         $("#mottoimg").attr({
             src:"images/ibm2.png",
             });
@@ -34,7 +34,8 @@ $(document).ready(function(){
 */;
     $("#codebtn")
     .on("click",function(){
-        $("#mottoh1").html("I am experienced with Procedural, Obeject-oriented and script Programmming, familiar with major IDE, version-control software and Linux cmd");
+        $("#mottoh1").html("I am experienced with Procedural (<span>C</span>), Obeject-oriented (<span>C++</span>,<span>JAVA</span>) and script Programmming (<span>Perl</span>, <span>python</span>), familiar with major IDE, version-control software, <span>MATLAB</span>, <span>SQL</span> and Linux command");
+        $("#mottoh1").find("span").css("color","#808080");
         $("#mottoimg").attr({
             src:"images/code.png"
             });
