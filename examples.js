@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#edubtn")
     .on("click",function(){
         $("#mottoh1").html("I am UofT ECE student, Expected to graduate in 2017 Spring.");
-        $("#mottoimg").attr("src","images/uoft.png");
+        $("#mottoimg").attr("src","images/ecelogo2.png");
         $("#mottop").css("display","none");
         console.log("education btn click");
     })
@@ -20,9 +20,9 @@ $(document).ready(function(){
     
     $("#workbtn")
     .on("click",function(){
-        $("#mottoh1").html("I am currently working as a QA developer intern in IBM Canada Ltd");
+        $("#mottoh1").html("I am currently working as a QA developer in IBM Canada Ltd for 16-month internship");
         $("#mottoimg").attr({
-            src:"images/ibm.png",
+            src:"images/ibm2.png",
             });
         $("#mottop").css("display","none");
         console.log("work btn click");        
@@ -34,9 +34,9 @@ $(document).ready(function(){
 */;
     $("#codebtn")
     .on("click",function(){
-        $("#mottoh1").html("I am experience with Procedural, Obeject-oriented and script Programmming, familiar with major IDE, version-control software and Linux cmd");
+        $("#mottoh1").html("I am experienced with Procedural, Obeject-oriented and script Programmming, familiar with major IDE, version-control software and Linux cmd");
         $("#mottoimg").attr({
-            src:"images/ibm.png"
+            src:"images/code.png"
             });
         $("#mottop").css("display","none");
         console.log("coding btn click"); 
@@ -46,42 +46,13 @@ $(document).ready(function(){
         console.log("debug trial5");
     });
 */
-});
-
-
-
-    
-
-/*
-$(
-    function(){
-    function displayContent(content){
-    //display the msg in the sloganBat
-    $("#sloganBar").html(content);
-    console.log("mouse on");
-    return;
+    $("#resume")
+    .hover(function(){
+        $(this).animate({opacity:1.0},700);
+        console.log("cursor to resume img");
     }
-
-//create event listener for the 3 logos
-$("#logo_engineer").mouseover(function(){
-    displayContent("Studying Electrical Engineering at U of T");
+    ,function(){
+         $(this).animate({opacity: 0.3},700);
+        console.log("cursor move out resume img");
+    });
 });
-$("#logo_engineer").mouseout(function(){
-    displayContent("Strive to Make a Difference");
-});
-$("#logo_code").mouseover(function(){
-    displayContent("LAMP Stack Web Developer")
-});
-$("#logo_code").mouseout(function(){
-    displayContent("Strive to Make a Difference")
-});
-$("#logo_tutor").mouseover(function(){
-    displayContent("Professional Tutor of Math & Sciences")
-});
-$("#logo_tutor").mouseout(function(){
-    displayContent("Strive to Make a Difference")
-});
-
-}
- );
- */
