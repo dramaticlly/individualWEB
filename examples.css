@@ -81,6 +81,10 @@ p{
     margin-top: 1%;
 }
 
+.triforce{
+    margin-top:5%;
+}
+
 .motto{
     background-color: #86e5c3;
     display: inline-block;
@@ -90,6 +94,11 @@ p{
     margin-bottom: 1%;
     border-top: 2px solid #006a52;
     border-bottom: 2px solid #006a52;
+}
+
+.motto img{
+    float:left;
+    margin-right: 2%;
 }
 
 .motto h1{
@@ -110,6 +119,15 @@ p{
     text-align: right;
     margin-right:1%;
     color: black!important;
+}
+
+.proj-intro h2{
+    color:#9ef1e0;
+}
+
+.proj-intro ul{
+    text-align:left;
+    list-style-type:circle
 }
 
 .section{

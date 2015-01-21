@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     $("#edubtn")
     .on("click",function(){
-        $("#mottoh1").html("I am UofT ECE student, Expected to graduate in 2017 Spring.");
+        $("#mottoh1").html("I am UofT ECE student, expected to graduate in 2017 Spring.");
         $("#mottoimg").attr("src","images/ecelogo2.png");
         $("#mottop").css("display","none");
         console.log("education btn click");

@@ -73,14 +73,19 @@ h1{
 			<img src="imgs/1.png"  alt="1"/>
 			<h1 style="color:#02301c;">Hongyue Zhang<br/></h1>
             <p style="color:#002515;font-size:250%">About Me</p>
-            <div class="triforcr" style="margin-top:5%">
-             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be" id="edubtn">Eudcation</button>
-             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be" id="workbtn">Work Experience</button>
-             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be" id="codebtn">Coding</button>
+            <div class="triforce">
+                
+             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be 1px" id="edubtn">
+                <span class="glyphicon glyphicon-book"></span> Education</button>
+             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be 1px" id="workbtn">
+                 <span class="glyphicon glyphicon-briefcase"></span> Work Experience</button>
+             <button class="btn btn-success btn-lg" style="margin-right:2%;margin-left:2%;border:solid #80e0be 1px" id="codebtn">
+                 <span class="glyphicon glyphicon-link"></span> Coding</button>
+            
             </div>
         </div>
             <div class="motto" id="JW">
-              <img src="images/motto.png" height=100 width=auto  alt="motto" style="float:left" id="mottoimg"/>
+              <img src="images/motto.png" height=100 width=auto  alt="motto" id="mottoimg"/>
               <h1 id="mottoh1">Success is peace of mind which is a direct result of self-satisfaction in knowing you did your best to become the best you are capable of becoming.</h1>
               <p id="mottop"> --John Wooden</p>
             </div>
@@ -89,29 +94,31 @@ h1{
 	    <div class="slide" id="slide1" data-anchor="slide1">
 			<div class="intro">
 				<h1>More Projects</h1>
-				<p style="color:#bff6ea">
+				<h2 class="proj-intro">
 					You can find summary of my in-school project and side-proejct here
-				</p>
+				</h2>
 			</div>
 		</div>
 
 	    <div class="slide" id="slide2" data-anchor="slide2">
             <div class="projimg">
-              <img src="images/legocar.png" alt="legocar" height=300px width=auto/>
+              <img src="images/legocar.png" alt="legocar" height=250px width=auto/>
             </div>
 			<h1>Self-balancing Lego Car</h1>
             <p>#Assembly #DE2 #NIOS2 #ElectricalMotor #LightSensor</p>
 
              <div class="intro">
-                <h2><span style="color:#9ef1e0;font-size:200%">How it works</span>:
-                    <ul style="text-align:left;list-style-type:circle">
+                 <div class="proj-intro">
+                     <h2><span style="font-size:200%">How it works</span>:
+                     <ul>
                         <li>Assemble the axles, gears, plate together into see-saw car</li>
                         <li>Connect motor and sensor port to lego controller, then link to GPIO of DE2 Board</li>
                         <li>light sensor value indicate closeness to the ground </li>
                         <li>If left side is closer to ground, set motor direction to forward and rise, vice versa</li>
                         <li>Use Pulse Width Modulation to adjust motor speed</li>
                     </ul>
-               </h2>
+                    </h2>
+                </div>
              </div>
 		</div>
 
@@ -123,14 +130,16 @@ h1{
             <p>#C++ #ContainerStructure #FileIO</p>
             <p>#AlgorithmOptimization #DynamicProgramming</p>
             <div class="intro">
-                <h2><span style="color:#9ef1e0;font-size:200%">Why need it</span>:
-                    <ul style="text-align:left;list-style-type:circle">
+                <div class="proj-intro">
+                  <h2><span style="font-size:200%">Why need it</span>:
+                    <ul>
                         <li>user-case scenario: extract longest popular word combination/phrases from logs</li>
                         <li>traditional recursive algorithm would be inefficient to solve problem like this</li>
                         <li>using dynamic programming instead would trade space with the execute time</li>
                         <li>one of example input test-case have extreme condition with each line has 1M character, good algorithm can reduce execute time from 600s to 4s</li>
                     </ul>
-               </h2>
+                 </h2>
+                </div>    
              </div>
 		</div>	
         <div class="slide" id="slide4" data-anchor="slide4">
@@ -239,4 +248,9 @@ h1{
 great website for color info
     http://zh.spycolor.com/
 http://paletton.com/
+
+
+glyphicon glyphicon-education
+glyphicon glyphicon-briefcase
+glyphicon glyphicon-link
 -->    
