@@ -47,6 +47,11 @@ $(document).ready(function(){
         console.log("debug trial5");
     });
 */
+    $("#hireme")
+    .on("click",function(){
+        $(this).text("contact@zhanghongyue.com");
+    });
+        
     $("#resume")
     .hover(function(){
         $(this).animate({opacity:1.0},700);
