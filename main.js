@@ -34,7 +34,7 @@ $(document).ready(function(){
 */;
     $("#codebtn")
     .on("click",function(){
-        $("#mottoh1").html("I am experienced with Procedural (<span>C</span>), Object-oriented (<span>C++</span>,<span>JAVA</span>) and script Programming (<span>Perl</span>, <span>python</span>), familiar with major IDE, version-control software, <span>MATLAB</span>, <span>SQL</span> and Linux command");
+        $("#mottoh1").html("I am experienced with Procedural (<span>C</span>), Object-oriented (<span>C++</span>,<span>JAVA</span>) and script Programming (<span>Perl</span>, <span>python</span>), familiar with major IDE, revision-control software, <span>MATLAB</span>, <span>SQL</span> and Linux command");
         $("#mottoh1").find("span").css("color","#808080");
         $("#mottoimg").attr({
             src:"images/code.png"
