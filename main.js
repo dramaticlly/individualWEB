@@ -20,7 +20,7 @@ $(document).ready(function(){
     
     $("#workbtn")
     .on("click",function(){
-        $("#mottoh1").html("I am currently working as a QA developer in IBM Canada Ltd for 16-month internship. I am responsible for functional verification of enterprise database software --DB2");
+        $("#mottoh1").html("I am currently working as a SDE intern in Amazon.com for summer 2016. I am responsible for developing webservice API on top existing package and designing new mobile application to empowered search merchandise of internest through both online and nearby offline brick store");
         $("#mottoimg").attr({
             src:"images/ibm2.png",
             });
